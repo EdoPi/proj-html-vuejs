@@ -1,0 +1,20 @@
+@import '_colors';
+
+@mixin container{
+    width: 1000px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+@mixin button-blue{
+    background-color: $navbar-bg;
+    padding: 15px 30px;
+}
+
+@mixin button-black{
+    background-color: black;
+    padding: 15px 30px;
+}
+
+
+$bg-jumbotron: "../img/home_slider_bg.jpg";
