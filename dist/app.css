@@ -10,6 +10,12 @@ ul {
 }
 
 /* END RESET */
+/* utility */
+.btn-black {
+  background-color: black;
+  padding: 10px 20px;
+}
+
 /* NAVBAR */
 .navbar {
   width: 100%;
@@ -32,7 +38,7 @@ ul {
   align-items: center;
 }
 .navbar-container .navbar-right > li {
-  padding-left: 20px;
+  margin-left: 25px;
 }
 
 .jumbotron {
@@ -88,4 +94,106 @@ ul {
   line-height: 35px;
   font-size: 25px;
   color: #62676c;
+}
+
+.main {
+  background-color: white;
+}
+.main-title-container {
+  width: 1000px;
+  margin: 0 auto;
+  height: 100%;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.main-title-container .title-main {
+  text-align: center;
+  position: relative;
+}
+.main-title-container .title-main > h3 {
+  letter-spacing: 3px;
+  padding-bottom: 20px;
+  font-size: 15px;
+}
+.main-title-container .title-main > h2 {
+  font-size: 40px;
+}
+.main-title-container .title-main:after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  background-color: #FB8066;
+  width: 30%;
+  right: 35%;
+  bottom: -50px;
+}
+.main-products-container {
+  width: 1000px;
+  margin: 0 auto;
+  height: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+.main-products-container .product {
+  height: 100%;
+  width: calc(100%/3 - 20px);
+}
+.main-products-container .product > img {
+  width: 100%;
+}
+.main-products-container .product > h4 {
+  font-size: 15px;
+  margin-top: 10px;
+}
+.main-products-container .product > h5 {
+  color: #62676c;
+  margin: 10px 0 20px;
+  font-size: 10px;
+}
+.main-products-container .product > p {
+  line-height: 35px;
+  color: #62676c;
+  font-size: 15px;
+}
+.main-featured-container {
+  width: 1000px;
+  margin: 0 auto;
+  height: 100%;
+  height: 550px;
+  background-image: url("../img/featured_article_1_bg.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 60px;
+  padding-bottom: 100px;
+}
+.main-featured-container .featured-content {
+  width: 85%;
+  color: white;
+}
+.main-featured-container .featured-content > h3 {
+  letter-spacing: 3px;
+  padding-bottom: 20px;
+  font-size: 15px;
+}
+.main-featured-container .featured-content > h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+.main-featured-container .featured-content > p {
+  line-height: 35px;
+}
+.main-featured-container .featured-content > .featured-button {
+  margin-top: 30px;
+}
+.main-featured-container .featured-content > .featured-button > span {
+  background-color: black;
+  padding: 10px 20px;
 }

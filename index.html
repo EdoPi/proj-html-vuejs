@@ -19,7 +19,7 @@
                 </ul>
 
                 <ul class="navbar-right">
-                    <li>Home</li>
+                    <li v-for="(element, i) in myMenu" :class="isLast(i, myMenu)">{{isToUpper(i,element,myMenu)}}</li>
                     <li><i class="fas fa-search"></i></li>
                 </ul>
            </div>
@@ -47,6 +47,110 @@
                 </p>
             </div>
         </div>
+        <!-- END ABOUT -->
+        <!-- MAIN -->
+        <div class="main">
+            <!-- MAIN TITLE -->
+            <div class="main-title-container">
+                <div class="title-main">
+                    <h3>PHASELLUS EGET METUS</h3>
+                    <h2>All the latest news</h2>
+                </div>
+            </div>
+            <!-- END MAIN TITLE -->
+            <!-- MAIN PRODUCT -->
+            <div class="main-products-container">
+                <div class="product">
+                    <img src="img/products-left.jpg" alt="">
+                    <h4>Morbi vitae dui euismod vulputate sollecitudin</h4>
+                    <h5>October 11th, 2015 | 2 Comments</h5>
+                    <p>
+                        Donec finibus sit amet orci eget ultricies Praesent
+                        posuere ante ut erat fringilla, vestibulum placerat metus
+                        mattis. Aenean dictum vitae nisl
+                    </p>
+                </div>
+                <div class="product">
+                    <img src="img/products-center.jpg" alt="">
+                    <h4>Vivamus pellenteque, felis quis varius</h4>
+                    <h5>October 11th, 2015 | Comments Off</h5>
+                    <p>
+                        Donec finibus sit amet orci eget ultricies. Praesent
+                        posuere ante ut erat fringilla, vestibulum pacerat metus mattis.
+                        Aenean vitae nisl
+                    </p>
+                </div>
+                <div class="product">
+                    <img src="img/products-rigth.jpg" alt="">
+                    <h4>Donec ornare pretium eget scelisque justo</h4>
+                    <h5>October 11th, 2015 | Comments Off</h5>
+                    <p>
+                        Donec finibus sit amet orci eget ultricies Praesent
+                        posuere ante ut erat fringilla, vestibulum placerat metus
+                        mattis. Aenean dictum vitae nisl 
+                    </p>
+                </div>
+            </div>
+            <!-- END MAIN PRODUCT -->
+            
+            <!-- FEATURED -->
+            <div class="main-featured-container">
+                <div class="featured-content">
+                    <h3>FEATURED ARTICLE</h3>
+                    <H2>Cras malesuada et orgi eget pharetra</H2>
+                    <p>
+                        In quis lectus sed leo elementum faucibus in dapibus dictum.
+                        Nullamolestie tortor nec lectus venenatis, sed blandit dui, dolor at bibendumsadips ets.
+                        ipsums doleres ficilis uns leo lectus.                         
+                    </p>
+                    <div class="featured-button">
+                        <span>READ MORE <i class="fas fa-angle-right"></i></span>                    
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- END FEATURED -->
+
+            <!-- PRODUCT SECOND -->
+            <div class="main-products-container">
+                <div class="product">
+                    <img src="img/products2-left.jpg" alt="">
+                    <h4>Fusce sollicitudin nunc sed placerat varius</h4>
+                    <h5>October 11th, 2015 | Comments Off</h5>
+                    <p>
+                        Donec finibus sit amet orci eget ultricies Praesent
+                        posuere ante ut erat fringilla, vestibulum placerat metus
+                        mattis. Aenean dictum vitae nisl
+                    </p>
+                </div>
+                <div class="product">
+                    <img src="img/products2-center.jpg" alt="">
+                    <h4>Donec facilis leo sit amet laoreet</h4>
+                    <h5>October 11th, 2015 | Comments Off</h5>
+                    <p>
+                        Donec finibus sit amet orci eget ultricies. Praesent
+                        posuere ante ut erat fringilla, vestibulum pacerat metus mattis.
+                        Aenean vitae nisl
+                    </p>
+                </div>
+                <div class="product">
+                    <img src="img/products2-rigth.jpg" alt="">
+                    <h4>Proin eu purus sed aru aliquet curabir vens</h4>
+                    <h5>October 11th, 2015 | Comments Off</h5>
+                    <p>
+                        Donec finibus sit amet orci eget ultricies Praesent
+                        posuere ante ut erat fringilla, vestibulum placerat metus
+                        mattis. Aenean dictum vitae nisl 
+                    </p>
+                </div>
+            </div>
+            <!-- END PRODUCTS SECOND -->
+        </div>
+        <!-- END MAIN -->
+
+        
+        
 
 
     </div>

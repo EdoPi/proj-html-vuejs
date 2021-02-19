@@ -1,4 +1,4 @@
-@import '_colors';
+@import 'colors';
 
 @mixin container{
     width: 1000px;
@@ -13,8 +13,19 @@
 
 @mixin button-black{
     background-color: black;
-    padding: 15px 30px;
+    padding: 10px 20px;
 }
 
+@mixin coral-line {
+    position: absolute;
+    content: "";
+    height: 2px;
+    background-color: $icon-bg-color;
+    width: 30%;
+    right: 35%;
+    bottom: -50px;    
+}
 
 $bg-jumbotron: "../img/home_slider_bg.jpg";
+$bg-featured:"../img/featured_article_1_bg.jpg";
+$parag-height: 35px;
