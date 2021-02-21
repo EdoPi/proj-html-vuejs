@@ -166,7 +166,7 @@ ul {
   height: 100%;
   height: 550px;
   background-image: url("../img/featured_article_1_bg.jpg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
@@ -196,4 +196,91 @@ ul {
 .main-featured-container .featured-content > .featured-button > span {
   background-color: black;
   padding: 10px 20px;
+}
+.main-tutorials-container {
+  width: 1000px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  margin-bottom: 100px;
+}
+.main-tutorials-container .tutorials-left-content {
+  background-image: url("../img/featured-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 450px;
+  width: 65%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px;
+}
+.main-tutorials-container .tutorials-left-content > h3 {
+  letter-spacing: 3px;
+  padding-bottom: 20px;
+  font-size: 15px;
+}
+.main-tutorials-container .tutorials-left-content > h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+.main-tutorials-container .tutorials-left-content > p {
+  line-height: 35px;
+}
+.main-tutorials-container .tutorials-left-content > .tutorials-button {
+  margin-top: 30px;
+}
+.main-tutorials-container .tutorials-left-content > .tutorials-button > span {
+  background-color: black;
+  padding: 10px 20px;
+}
+.main-tutorials-container .tutorials-rigth-content {
+  width: 35%;
+  height: 450px;
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main-tutorials-container .tutorials-rigth-content > h2 {
+  position: relative;
+  padding-bottom: 20px;
+}
+.main-tutorials-container .tutorials-rigth-content > h2:after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  background-color: #FB8066;
+  width: 30%;
+  left: 0;
+  bottom: 0;
+}
+.main-tutorials-container .tutorials-rigth-content > .tutorials-box {
+  display: flex;
+}
+.main-tutorials-container .tutorials-rigth-content > .tutorials-box > img {
+  margin-right: 15px;
+}
+.main-tutorials-container .tutorials-rigth-content > .tutorials-box > div > h4 {
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.main-tutorials-container .tutorials-rigth-content > .tutorials-box > div > h5 {
+  color: #62676c;
+  margin: 10px 0 20px;
+  font-size: 10px;
+}
+
+.read-blog {
+  height: 150px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.read-blog > h3 > span {
+  margin-left: 10px;
 }

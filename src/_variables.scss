@@ -26,6 +26,18 @@
     bottom: -50px;    
 }
 
+@mixin title-description {
+    letter-spacing: 3px;
+    padding-bottom: 20px;
+    font-size: 15px;
+}
+
+@mixin title-product {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
 $bg-jumbotron: "../img/home_slider_bg.jpg";
 $bg-featured:"../img/featured_article_1_bg.jpg";
 $parag-height: 35px;
+$bg-tutorials:"../img/featured-bg.jpg"

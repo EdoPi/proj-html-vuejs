@@ -174,7 +174,7 @@ ul{
         @include container;
         height:550px;
         background-image: url($bg-featured);
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
         display: flex;
         justify-content: center;
@@ -187,14 +187,11 @@ ul{
             color: white;
             
             > h3{
-                letter-spacing: 3px;
-                padding-bottom: 20px;
-                font-size: 15px;
+                @include title-description;
             }
 
             > h2{
-                font-size: 40px;
-                margin-bottom: 30px;
+                @include title-product;
             }
 
             > p{
@@ -211,4 +208,102 @@ ul{
         
     } // end featured container
 
+    &-tutorials-container{
+        @include container;
+        display: flex;
+        margin-bottom: 100px;
+
+    .tutorials-left-content{
+        background-image: url($bg-tutorials);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 450px;
+        width:65%;
+        color: white;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 50px;
+        
+
+        > h3{
+            @include title-description;
+        }
+
+        > h2{
+            @include title-product;
+        }
+
+        > p{
+            line-height: $parag-height;
+        }
+
+        > .tutorials-button{
+            margin-top: 30px;
+            > span{
+                @include button-black;
+            }
+        }
+    } // end tutorials left
+    
+    .tutorials-rigth-content{
+        width: 35%;
+        height: 450px;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+        > h2{
+            position: relative;
+            padding-bottom: 20px;
+
+            &:after{
+                position: absolute;
+                content: "";
+                height: 2px;
+                background-color: $icon-bg-color;
+                width: 30%;
+                left: 0;
+                bottom: 0; 
+            }
+        }
+        
+        
+        > .tutorials-box{
+            display: flex;
+
+            > img{
+                margin-right: 15px;
+            }
+
+            > div > h4{
+                font-size: 15px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+            > div > h5{
+                color: $light-text-color;
+                margin: 10px 0 20px;
+                font-size: 10px;
+            }
+        }
+    }
+    }// end tutorials container
 }// end Main
+
+.read-blog{
+    height: 150px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+    > h3{
+        > span{
+            margin-left: 10px;
+        }
+    }
+}//end read Blog
