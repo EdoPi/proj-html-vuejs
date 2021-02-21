@@ -5,6 +5,10 @@
   padding: 0;
 }
 
+body {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
 ul {
   list-style-type: none;
 }
@@ -23,7 +27,7 @@ ul {
   background-color: #27aabe;
 }
 .navbar-container {
-  width: 1000px;
+  width: 1100px;
   margin: 0 auto;
   height: 100%;
   display: flex;
@@ -48,7 +52,7 @@ ul {
   height: 891px;
 }
 .jumbotron-container {
-  width: 1000px;
+  width: 1100px;
   margin: 0 auto;
   height: 100%;
   height: 100%;
@@ -74,7 +78,7 @@ ul {
   background-color: #ccc;
 }
 .about-container {
-  width: 1000px;
+  width: 1100px;
   margin: 0 auto;
   height: 100%;
   height: 100%;
@@ -84,9 +88,9 @@ ul {
   flex-direction: column;
 }
 .about-container .about-title {
-  letter-spacing: 3px;
+  letter-spacing: 5px;
   padding-bottom: 20px;
-  font-size: 15px;
+  font-size: 12px;
 }
 .about-container > p {
   width: 70%;
@@ -100,7 +104,7 @@ ul {
   background-color: white;
 }
 .main-title-container {
-  width: 1000px;
+  width: 1100px;
   margin: 0 auto;
   height: 100%;
   height: 250px;
@@ -114,9 +118,9 @@ ul {
   position: relative;
 }
 .main-title-container .title-main > h3 {
-  letter-spacing: 3px;
+  letter-spacing: 5px;
   padding-bottom: 20px;
-  font-size: 15px;
+  font-size: 12px;
 }
 .main-title-container .title-main > h2 {
   font-size: 40px;
@@ -131,7 +135,7 @@ ul {
   bottom: -50px;
 }
 .main-products-container {
-  width: 1000px;
+  width: 1100px;
   margin: 0 auto;
   height: 100%;
   height: 100%;
@@ -147,21 +151,21 @@ ul {
   width: 100%;
 }
 .main-products-container .product > h4 {
-  font-size: 15px;
+  font-size: 13px;
   margin-top: 10px;
 }
 .main-products-container .product > h5 {
   color: #62676c;
   margin: 10px 0 20px;
-  font-size: 10px;
+  font-size: 8px;
 }
 .main-products-container .product > p {
   line-height: 35px;
   color: #62676c;
-  font-size: 15px;
+  font-size: 13px;
 }
 .main-featured-container {
-  width: 1000px;
+  width: 1100px;
   margin: 0 auto;
   height: 100%;
   height: 550px;
@@ -179,12 +183,12 @@ ul {
   color: white;
 }
 .main-featured-container .featured-content > h3 {
-  letter-spacing: 3px;
+  letter-spacing: 5px;
   padding-bottom: 20px;
-  font-size: 15px;
+  font-size: 12px;
 }
 .main-featured-container .featured-content > h2 {
-  font-size: 40px;
+  font-size: 35px;
   margin-bottom: 30px;
 }
 .main-featured-container .featured-content > p {
@@ -198,7 +202,7 @@ ul {
   padding: 10px 20px;
 }
 .main-tutorials-container {
-  width: 1000px;
+  width: 1100px;
   margin: 0 auto;
   height: 100%;
   display: flex;
@@ -208,7 +212,7 @@ ul {
   background-image: url("../img/featured-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 450px;
+  height: 500px;
   width: 65%;
   color: white;
   display: flex;
@@ -217,12 +221,12 @@ ul {
   padding: 50px;
 }
 .main-tutorials-container .tutorials-left-content > h3 {
-  letter-spacing: 3px;
+  letter-spacing: 5px;
   padding-bottom: 20px;
-  font-size: 15px;
+  font-size: 12px;
 }
 .main-tutorials-container .tutorials-left-content > h2 {
-  font-size: 40px;
+  font-size: 35px;
   margin-bottom: 30px;
 }
 .main-tutorials-container .tutorials-left-content > p {
@@ -237,7 +241,7 @@ ul {
 }
 .main-tutorials-container .tutorials-rigth-content {
   width: 35%;
-  height: 450px;
+  height: 500px;
   padding-left: 30px;
   display: flex;
   flex-direction: column;
@@ -263,14 +267,14 @@ ul {
   margin-right: 15px;
 }
 .main-tutorials-container .tutorials-rigth-content > .tutorials-box > div > h4 {
-  font-size: 15px;
+  font-size: 13px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 .main-tutorials-container .tutorials-rigth-content > .tutorials-box > div > h5 {
   color: #62676c;
   margin: 10px 0 20px;
-  font-size: 10px;
+  font-size: 8px;
 }
 
 .read-blog {

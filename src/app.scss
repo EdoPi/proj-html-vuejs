@@ -7,9 +7,15 @@
     padding: 0;    
 }
 
+body{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
 ul{
     list-style-type: none;
 }
+
+
 /* END RESET */
 
 
@@ -89,9 +95,7 @@ ul{
         flex-direction: column;
 
         .about-title{
-            letter-spacing: 3px;
-            padding-bottom: 20px;
-            font-size: 15px;
+            @include title-description;
         }
 
         > p{
@@ -120,9 +124,7 @@ ul{
             position: relative;
 
             > h3 {
-                letter-spacing: 3px;
-                padding-bottom: 20px;
-                font-size: 15px;
+                @include title-description;
             }
             
             > h2{
@@ -151,20 +153,20 @@ ul{
             }
 
             > h4{
-                font-size: 15px;
+                font-size: 13px;
                 margin-top: 10px;
             }
             
             > h5{
                 color: $light-text-color;
                 margin: 10px 0 20px;
-                font-size: 10px;
+                font-size: 8px;
             }
             
             > p{
                 line-height: $parag-height;
                 color: $light-text-color;
-                font-size: 15px;                
+                font-size: 13px;                
             }
 
         }
@@ -217,7 +219,7 @@ ul{
         background-image: url($bg-tutorials);
         background-size: cover;
         background-repeat: no-repeat;
-        height: 450px;
+        height: 500px;
         width:65%;
         color: white;
         display: flex;
@@ -248,7 +250,7 @@ ul{
     
     .tutorials-rigth-content{
         width: 35%;
-        height: 450px;
+        height: 500px;
         padding-left: 30px;
         display: flex;
         flex-direction: column;
@@ -278,7 +280,7 @@ ul{
             }
 
             > div > h4{
-                font-size: 15px;
+                font-size: 13px;
                 margin-top: 10px;
                 margin-bottom: 10px;
             }
@@ -286,7 +288,7 @@ ul{
             > div > h5{
                 color: $light-text-color;
                 margin: 10px 0 20px;
-                font-size: 10px;
+                font-size: 8px;
             }
         }
     }

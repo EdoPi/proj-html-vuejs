@@ -1,7 +1,7 @@
 @import 'colors';
 
 @mixin container{
-    width: 1000px;
+    width: 1100px;
     margin: 0 auto;
     height: 100%;
 }
@@ -27,13 +27,13 @@
 }
 
 @mixin title-description {
-    letter-spacing: 3px;
+    letter-spacing: 5px;
     padding-bottom: 20px;
-    font-size: 15px;
+    font-size: 12px;
 }
 
 @mixin title-product {
-    font-size: 40px;
+    font-size: 35px;
     margin-bottom: 30px;
 }
 
