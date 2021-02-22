@@ -376,3 +376,39 @@ ul {
   background-color: #27aabe;
   padding: 15px 30px;
 }
+
+.subscribe {
+  height: 350px;
+  background-color: #F0F0F0;
+}
+.subscribe-container {
+  width: 1100px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.subscribe-container > h3 {
+  font-weight: 300;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.subscribe-container > .input-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.subscribe-container > .input-content > input {
+  border: 1px solid #eee;
+  width: 40%;
+  padding: 15px 10px;
+  margin-right: 20px;
+}
+.subscribe-container > .input-content > span {
+  background-color: black;
+  padding: 10px 85px;
+  color: white;
+}

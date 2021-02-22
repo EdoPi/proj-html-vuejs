@@ -397,4 +397,45 @@ ul{
         }
 
     }
-}   
+}// end sign community
+
+.subscribe{
+    height: 350px;
+    background-color: $bg-row;
+
+    &-container{
+        @include container;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        > h3{
+            font-weight: 300;
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+        
+        > .input-content{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            > input{
+                border:1px solid #eee;
+                width: 40%;
+                padding: 15px 10px;
+                margin-right: 20px;
+                
+            }
+
+            > span{
+                background-color: black;
+                padding: 10px 85px;
+                color: white;
+            }
+        }
+    }
+}//end subscribe
+
