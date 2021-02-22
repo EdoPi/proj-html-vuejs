@@ -75,7 +75,7 @@ ul {
 
 .about {
   height: 400px;
-  background-color: #ccc;
+  background-color: #F0F0F0;
 }
 .about-container {
   width: 1100px;
@@ -287,4 +287,92 @@ ul {
 }
 .read-blog > h3 > span {
   margin-left: 10px;
+}
+
+.forum {
+  background-color: #F0F0F0;
+}
+.forum-rooms-container {
+  width: 1100px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  justify-content: center;
+  padding-bottom: 150px;
+}
+.forum-rooms-container > .room {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-top: 2px solid #27aabe;
+  width: calc(100% / 5);
+  height: 200px;
+  margin: 20px;
+}
+.forum-rooms-container > .room > div {
+  background-color: #FB8066;
+  color: white;
+  font-size: 50px;
+  width: 50px;
+  height: 50px;
+  padding: 50px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0;
+}
+.forum-rooms-container > .room > h3 {
+  margin-bottom: 50px;
+}
+
+.go-forum {
+  height: 150px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.go-forum > h3 > span {
+  margin-left: 10px;
+}
+
+.sign-community {
+  height: 650px;
+  background-image: url("../img/forum-bg.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sign-community-container {
+  width: 1100px;
+  margin: 0 auto;
+  height: 100%;
+  height: auto;
+}
+.sign-community-container > .sign-community-content {
+  color: white;
+  text-align: center;
+}
+.sign-community-container > .sign-community-content > h2 {
+  font-size: 40px;
+  width: 30%;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+.sign-community-container > .sign-community-content > p {
+  width: 60%;
+  margin: 0 auto;
+  line-height: 30px;
+  padding-bottom: 50px;
+}
+.sign-community-container > .sign-community-content > .sign-button > span {
+  background-color: #27aabe;
+  padding: 15px 30px;
 }
