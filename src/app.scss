@@ -331,7 +331,8 @@ a{
 
     &-rooms-container{
         @include container;
-        @include flex-justify-center; 
+        @include flex-space-between;
+        align-items: center;
         flex-wrap: wrap;
         height: auto;
         padding-bottom: 150px;
@@ -341,9 +342,9 @@ a{
             flex-direction: column;
             background-color: white;
             border-top: 2px solid $navbar-bg;
-            width: calc(100% / 5);
-            height: 200px;
-            margin: 20px;
+            width: 22%;
+            height: 220px;
+            margin-bottom: 30px;
 
             > div{
                 @include flex-center;
@@ -354,7 +355,7 @@ a{
                 height: 50px;
                 padding: 50px;
                 border-radius:100%;
-                margin: 15px 0;
+                margin: 25px 0 15px;
             }
 
             > h3 {
