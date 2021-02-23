@@ -117,10 +117,7 @@ a {
   color: #62676c;
 }
 
-.main {
-  background-color: white;
-}
-.main-title-container {
+.title-section-container {
   width: 1100px;
   margin: 0 auto;
   height: 100%;
@@ -130,19 +127,19 @@ a {
   height: 250px;
   margin-bottom: 50px;
 }
-.main-title-container .title-main {
+.title-section-container .title-section {
   text-align: center;
   position: relative;
 }
-.main-title-container .title-main > h3 {
+.title-section-container .title-section > h3 {
   letter-spacing: 5px;
   padding-bottom: 20px;
   font-size: 12px;
 }
-.main-title-container .title-main > h2 {
+.title-section-container .title-section > h2 {
   font-size: 40px;
 }
-.main-title-container .title-main:after {
+.title-section-container .title-section:after {
   position: absolute;
   content: "";
   height: 2px;
@@ -150,6 +147,10 @@ a {
   width: 30%;
   right: 35%;
   bottom: -50px;
+}
+
+.main {
+  background-color: white;
 }
 .main-products-container {
   width: 1100px;
@@ -160,7 +161,6 @@ a {
   margin-bottom: 80px;
 }
 .main-products-container .product {
-  height: 100%;
   width: calc(100%/3 - 20px);
 }
 .main-products-container .product > img {
@@ -196,7 +196,7 @@ a {
   background-image: url("../img/featured_article_1_bg.jpg");
   background-size: cover;
   align-items: flex-end;
-  margin-bottom: 60px;
+  margin-bottom: 100px;
   padding-bottom: 100px;
 }
 .main-featured-container .featured-content {
@@ -235,7 +235,6 @@ a {
   justify-content: center;
   background-image: url("../img/featured-bg.jpg");
   background-size: cover;
-  height: 500px;
   width: 65%;
   color: white;
   flex-direction: column;

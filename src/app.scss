@@ -123,41 +123,42 @@ a{
     }
 }// end about
 
+.title-section-container{
+    @include container;
+    @include flex-center;
+    height: 250px;
+    margin-bottom: 50px;
+
+    .title-section{
+        text-align: center;
+        position: relative;
+
+        > h3 {
+            @include title-description;                
+            
+        }
+        
+        > h2{
+            font-size: 40px;
+        }
+
+        &:after{
+            @include coral-line;               
+        }
+    }
+} // end title section container
+
+
 .main{
     background-color: white;
 
-    &-title-container{
-        @include container;
-        @include flex-center;
-        height: 250px;
-        margin-bottom: 50px;
-
-        .title-main{
-            text-align: center;
-            position: relative;
-
-            > h3 {
-                @include title-description;                
-                
-            }
-            
-            > h2{
-                font-size: 40px;
-            }
-
-            &:after{
-                @include coral-line;               
-            }
-        }
-    } // end title container
-
+    
     &-products-container{
         @include container;
         @include flex-space-between;
         margin-bottom: 80px;
 
         .product{
-            height: 100%;
             width: calc(100%/3 - 20px);
 
             >img{
@@ -199,7 +200,7 @@ a{
         background-image: url($bg-featured);
         background-size: cover;
         align-items: flex-end;
-        margin-bottom: 60px;
+        margin-bottom: 100px;
         padding-bottom: 100px;
         
         .featured-content{
@@ -237,7 +238,6 @@ a{
         @include flex-justify-center;
         background-image: url($bg-tutorials);
         background-size: cover;
-        height: 500px;
         width:65%;
         color: white;
         flex-direction: column;

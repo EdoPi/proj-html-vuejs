@@ -82,6 +82,57 @@ var app = new Vue({
             url:'#3',
           },
       ],
+
+      rooms:[
+          {
+              title:'News & Community',
+              url:'###',
+              prefix: 'far',
+              class:'fa-file-alt'
+          },
+          {
+              title:'Apple Forum',
+              url:'###',
+              prefix: 'fab',
+              class:'fa-apple'
+          },
+          {
+              title:'Microsoft Forum',
+              url:'###',
+              prefix: 'fab',
+              class:'fa-windows'
+          },
+          {
+              title:'Android Forum',
+              url:'###',
+              prefix: 'fab',
+              class:'fa-android'
+          },
+          {
+              title:'General Discussion',
+              url:'###',
+              prefix: 'fas',
+              class:'fa-coffee'
+          },
+          {
+              title:'Apps & Software',
+              url:'###',
+              prefix: 'fas',
+              class:'fa-cubes'
+          },
+          {
+              title:'Gadget & Stuff',
+              url:'###',
+              prefix: 'fas',
+              class:'fa-laptop'
+          },
+          {
+              title:'Tutorials & Guides',
+              url:'###',
+              prefix: 'fas',
+              class:'fa-wrench'
+          }
+      ],
       
     },
     methods:{
