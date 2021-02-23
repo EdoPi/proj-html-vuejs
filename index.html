@@ -21,7 +21,7 @@
                 </ul>
 
                 <ul class="navbar-right">
-                    <li v-for="(element, i) in myMenu" :class="isLast(i, myMenu)">{{isToUpper(i,element,myMenu)}}</li>
+                    <li v-for="element in myMenu" :class="isButton(element)"><a :href="element.url">{{element.name}}</a></li>
                     <li><i class="fas fa-search"></i></li>
                 </ul>
            </div>
@@ -34,7 +34,7 @@
                 <h1 class="jumbotron-title">TECH FORUM!</h1>
                 <div class="jumbotron-description">Discuss all the latest technology news and trends</div>
                 <div class="jumbotron-button">
-                    <span>GET AVADA NOW <i class="fas fa-angle-right"></i></span>                    
+                    <span><a href="###">GET AVADA NOW</a> <i class="fas fa-angle-right"></i></span>                    
                 </div>
             </div>
         </div>
@@ -68,7 +68,7 @@
             <div class="main-products-container">
                 <div class="product">
                     <img src="img/products-left.jpg" alt="">
-                    <h4>Morbi vitae dui euismod vulputate sollecitudin</h4>
+                    <h4><a href="">Morbi vitae dui euismod vulputate sollecitudin</a></h4>
                     <h5>October 11th, 2015 | 2 Comments</h5>
                     <p>
                         Donec finibus sit amet orci eget ultricies Praesent
@@ -78,7 +78,7 @@
                 </div>
                 <div class="product">
                     <img src="img/products-center.jpg" alt="">
-                    <h4>Vivamus pellenteque, felis quis varius</h4>
+                    <h4><a href="###">Vivamus pellenteque, felis quis varius</a></h4>
                     <h5>October 11th, 2015 | Comments Off</h5>
                     <p>
                         Donec finibus sit amet orci eget ultricies. Praesent
@@ -88,7 +88,7 @@
                 </div>
                 <div class="product">
                     <img src="img/products-rigth.jpg" alt="">
-                    <h4>Donec ornare pretium eget scelisque justo</h4>
+                    <h4><a href="###">Donec ornare pretium eget scelisque justo</a></h4>
                     <h5>October 11th, 2015 | Comments Off</h5>
                     <p>
                         Donec finibus sit amet orci eget ultricies Praesent
@@ -110,7 +110,7 @@
                         ipsums doleres ficilis uns leo lectus.                         
                     </p>
                     <div class="featured-button">
-                        <span>READ MORE <i class="fas fa-angle-right"></i></span>                    
+                        <span><a href="">READ MORE</a> <i class="fas fa-angle-right"></i></span>                    
                     </div>
                 </div>
             </div>
@@ -120,7 +120,7 @@
             <div class="main-products-container">
                 <div class="product">
                     <img src="img/products2-left.jpg" alt="">
-                    <h4>Fusce sollicitudin nunc sed placerat varius</h4>
+                    <h4><a href="###">Fusce sollicitudin nunc sed placerat varius</a></h4>
                     <h5>October 11th, 2015 | Comments Off</h5>
                     <p>
                         Donec finibus sit amet orci eget ultricies Praesent
@@ -130,7 +130,7 @@
                 </div>
                 <div class="product">
                     <img src="img/products2-center.jpg" alt="">
-                    <h4>Donec facilis leo sit amet laoreet</h4>
+                    <h4><a href="###">Donec facilis leo sit amet laoreet</a></h4>
                     <h5>October 11th, 2015 | Comments Off</h5>
                     <p>
                         Donec finibus sit amet orci eget ultricies. Praesent
@@ -140,7 +140,7 @@
                 </div>
                 <div class="product">
                     <img src="img/products2-rigth.jpg" alt="">
-                    <h4>Proin eu purus sed aru aliquet curabir vens</h4>
+                    <h4><a href="###">Proin eu purus sed aru aliquet curabir vens</a></h4>
                     <h5>October 11th, 2015 | Comments Off</h5>
                     <p>
                         Donec finibus sit amet orci eget ultricies Praesent
@@ -161,7 +161,7 @@
                         Nullamolestie tortor nec lectus venenatis, sed blandit dui, dolor at bibendum.
                     </p>
                     <div class="tutorials-button">
-                        <span>READ MORE <i class="fas fa-angle-right"></i></span>                    
+                        <span><a href="###">READ MORE </a> <i class="fas fa-angle-right"></i></span>                    
                     </div>
                 </div>
                 <div class="tutorials-rigth-content">
@@ -169,21 +169,21 @@
                     <div class="tutorials-box">
                         <img src="img/box1.jpg" alt="">
                         <div>
-                            <h4>Donec ornare pretium eget scelisque justo</h4>
+                            <h4><a href="###">Donec ornare pretium eget scelisque justo</a></h4>
                             <h5>October 11th, 2015 | Comments Off</h5>
                         </div>
                     </div>
                     <div class="tutorials-box">
                         <img src="img/box2.jpg" alt="">
                         <div>
-                            <h4>Fusce sollicitudin nunc sed placerat varius</h4>
+                            <h4><a href="">Fusce sollicitudin nunc sed placerat varius</a></h4>
                             <h5>October 11th, 2015 | Comments Off</h5>
                         </div>
                     </div>
                     <div class="tutorials-box">
                         <img src="img/box3.jpg" alt="">
                         <div>
-                            <h4>Proin eu purus sed aru aliquet curabir vens</h4>
+                            <h4><a href="">Proin eu purus sed aru aliquet curabir vens</a></h4>
                             <h5>October 11th, 2015 | Comments Off</h5>
                         </div>
                     </div>
@@ -195,7 +195,7 @@
 
         <!-- READ BLOG -->
         <div class="read-blog">
-            <h3>READ OUR BLOG  <span>&#10142;</span></h3>
+            <h3><a href=""> READ OUR BLOG  <span>&#10142;</span></a></h3>
         </div>
         <!-- END READ BLOG -->
 
@@ -210,35 +210,35 @@
             <div class="forum-rooms-container">
                 <div class="room">
                     <div><i class="far fa-file-alt"></i></div>
-                    <h3>News & Community</h3>
+                    <h3><a href="###">News & Community</a></h3>
                 </div>
                 <div class="room">
                     <div><i class="fab fa-apple"></i></div>
-                    <h3>Apple Forum</h3>
+                    <h3><a href="###">Apple Forum</a></h3>
                 </div>
                 <div class="room">
                     <div><i class="fab fa-windows"></i></div>
-                    <h3>Microsoft Forum</h3>
+                    <h3><a href="###">Microsoft Forum</a></h3>
                 </div>
                 <div class="room">
                     <div><i class="fab fa-android"></i></div>
-                    <h3>Android Forum</h3>
+                    <h3><a href="###">Android Forum</a></h3>
                 </div>
                 <div class="room">
                     <div><i class="fas fa-coffee"></i></div>
-                    <h3>General Discussion</h3>
+                    <h3><a href="###">General Discussion</a></h3>
                 </div>
                 <div class="room">
                     <div><i class="fas fa-cubes"></i></div>
-                    <h3>Apps & Software</h3>
+                    <h3><a href="###">Apps & Software</a></h3>
                 </div>
                 <div class="room">
                     <div><i class="fas fa-laptop"></i></div>
-                    <h3>Gadget & Stuff</h3>
+                    <h3><a href="###">Gadget & Stuff</a></h3>
                 </div>
                 <div class="room">
                     <div><i class="fas fa-wrench"></i></div>
-                    <h3>Tutorials & Guides</h3>
+                    <h3><a href="###">Tutorials & Guides</a></h3>
                 </div>
             </div>            
         </div>
@@ -246,7 +246,7 @@
 
         <!-- GO FORUM -->
         <div class="go-forum">
-            <h3>READ OUR BLOG  <span>&#10142;</span></h3>
+            <h3><a href="">READ OUR BLOG  <span>&#10142;</span></a></h3>
         </div>
         <!-- END GO FORUM -->
 
@@ -260,7 +260,7 @@
                         Curabitur feugiat vulputate purus ipsums dolores ficilis uns etra.
                     </p>
                     <div class="sign-button">
-                        <span>SIGN UP <i class="fas fa-angle-right"></i></span>                    
+                        <span><a href="###">SIGN UP <i class="fas fa-angle-right"></i></a></span>                    
                     </div>
                 </div>
             </div>
@@ -273,7 +273,7 @@
                 <h3 class="title-subscribe">Subscribe to our Newsletter</h3>
                 <div class="input-content">
                     <input type="text" placeholder="Insert your email*"> 
-                    <span>SEND</span>
+                    <span><a href="###">SEND</a></span>
                 </div>
             </div>
         </div>

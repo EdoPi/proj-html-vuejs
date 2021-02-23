@@ -1,17 +1,45 @@
 var app = new Vue({
     el: '#root',
-    data: {
+    data: {        
 
       myMenu:[
-          'Home',
-          'Apple',
-          'Microsoft',
-          'Android',
-          'Forums',
-          'Contact us',
-          'Join Us',
+          {
+              name:'Home',
+              button: false,
+              url:'#1'
+          },
+          {
+              name:'Apple',
+              button: false,
+              url:'#2'
+          },
+          {
+              name:'Microsoft',
+              button: false,
+              url:'#3'
+          },
+          {
+              name:'Android',
+              button: false,
+              url:'#4'
+          },
+          {
+              name:'Forums',
+              button: false,
+              url:'#5'
+          },
+          {
+              name:'Contact Us',
+              button: false,
+              url:'#6'
+          },
+          {
+              name:'Join Us',
+              button: true,
+              url:'#7'
+          },
       ],
-      active: false,
+
       myFooter:[
           {
             title:'AVADA TECH FORUM',
@@ -57,19 +85,17 @@ var app = new Vue({
       
     },
     methods:{
-        isLast: function (index, array) {
-            if (index + 1 === array.length ) {                
-                return 'btn-black' 
-            }  
-        },
-        isToUpper: function (index, element, array ){
-            if (index + 1 === array.length) {
-                return element.toUpperCase();
-            }
-            return element;
-        },
+
         backToTop: function () {
             window.scrollTo(0,0);
+        },
+
+        isButton: function (element){
+            if (element.button) {
+                return 'btn-black';
+            }else{
+                return 'arrow-down';
+            }
         }       
     },
   });

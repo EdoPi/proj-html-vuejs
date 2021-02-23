@@ -13,15 +13,17 @@ ul {
   list-style-type: none;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 /* END RESET */
 /* utility */
 .btn-black {
   background-color: black;
   padding: 10px 20px;
-}
-
-.pad-right {
-  padding-right: 40px;
+  text-transform: uppercase;
 }
 
 /* NAVBAR */
@@ -38,7 +40,6 @@ ul {
   justify-content: space-between;
   align-items: center;
   color: white;
-  height: 100%;
 }
 .navbar-container .navbar-right {
   height: 100%;
@@ -47,6 +48,19 @@ ul {
 }
 .navbar-container .navbar-right > li {
   margin-left: 25px;
+  position: relative;
+}
+.navbar-container .navbar-right > .arrow-down:hover::after {
+  content: "";
+  position: absolute;
+  left: 25%;
+  bottom: -45px;
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 12px solid #4a4a4a;
+  clear: both;
 }
 
 .jumbotron {
@@ -85,7 +99,6 @@ ul {
   width: 1100px;
   margin: 0 auto;
   height: 100%;
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -111,10 +124,10 @@ ul {
   width: 1100px;
   margin: 0 auto;
   height: 100%;
-  height: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 250px;
   margin-bottom: 50px;
 }
 .main-title-container .title-main {
@@ -142,7 +155,6 @@ ul {
   width: 1100px;
   margin: 0 auto;
   height: 100%;
-  height: 100%;
   display: flex;
   justify-content: space-between;
   margin-bottom: 80px;
@@ -158,6 +170,12 @@ ul {
   font-size: 13px;
   margin-top: 10px;
 }
+.main-products-container .product > h4 > a {
+  color: black;
+}
+.main-products-container .product > h4 > a:hover {
+  text-decoration: underline;
+}
 .main-products-container .product > h5 {
   color: #62676c;
   margin: 10px 0 20px;
@@ -172,12 +190,11 @@ ul {
   width: 1100px;
   margin: 0 auto;
   height: 100%;
+  display: flex;
+  justify-content: center;
   height: 550px;
   background-image: url("../img/featured_article_1_bg.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
   align-items: flex-end;
   margin-bottom: 60px;
   padding-bottom: 100px;
@@ -204,6 +221,7 @@ ul {
 .main-featured-container .featured-content > .featured-button > span {
   background-color: black;
   padding: 10px 20px;
+  text-transform: uppercase;
 }
 .main-tutorials-container {
   width: 1100px;
@@ -213,14 +231,13 @@ ul {
   margin-bottom: 100px;
 }
 .main-tutorials-container .tutorials-left-content {
+  display: flex;
+  justify-content: center;
   background-image: url("../img/featured-bg.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
   height: 500px;
   width: 65%;
   color: white;
-  display: flex;
-  justify-content: center;
   flex-direction: column;
   padding: 50px;
 }
@@ -242,14 +259,15 @@ ul {
 .main-tutorials-container .tutorials-left-content > .tutorials-button > span {
   background-color: black;
   padding: 10px 20px;
+  text-transform: uppercase;
 }
 .main-tutorials-container .tutorials-rigth-content {
+  display: flex;
+  justify-content: space-between;
   width: 35%;
   height: 500px;
   padding-left: 30px;
-  display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 .main-tutorials-container .tutorials-rigth-content > h2 {
   position: relative;
@@ -274,6 +292,12 @@ ul {
   font-size: 13px;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+.main-tutorials-container .tutorials-rigth-content > .tutorials-box > div > h4 > a {
+  color: black;
+}
+.main-tutorials-container .tutorials-rigth-content > .tutorials-box > div > h4 > a:hover {
+  text-decoration: underline;
 }
 .main-tutorials-container .tutorials-rigth-content > .tutorials-box > div > h5 {
   color: #62676c;
@@ -301,16 +325,16 @@ ul {
   margin: 0 auto;
   height: 100%;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   height: auto;
-  justify-content: center;
   padding-bottom: 150px;
 }
 .forum-rooms-container > .room {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   background-color: white;
   border-top: 2px solid #4a4a4a;
   width: calc(100% / 5);
@@ -318,6 +342,9 @@ ul {
   margin: 20px;
 }
 .forum-rooms-container > .room > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #FB8066;
   color: white;
   font-size: 50px;
@@ -325,13 +352,16 @@ ul {
   height: 50px;
   padding: 50px;
   border-radius: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin: 15px 0;
 }
 .forum-rooms-container > .room > h3 {
   margin-bottom: 50px;
+}
+.forum-rooms-container > .room > h3 > a {
+  color: black;
+}
+.forum-rooms-container > .room > h3 > a:hover {
+  text-decoration: underline;
 }
 
 .go-forum {
@@ -347,12 +377,12 @@ ul {
 }
 
 .sign-community {
-  height: 650px;
-  background-image: url("../img/forum-bg.jpg");
-  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 650px;
+  background-image: url("../img/forum-bg.jpg");
+  background-size: cover;
 }
 .sign-community-container {
   width: 1100px;
@@ -400,10 +430,10 @@ ul {
   margin-bottom: 30px;
 }
 .subscribe-container > .input-content {
-  width: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 .subscribe-container > .input-content > input {
   border: 1px solid #eee;
@@ -486,15 +516,15 @@ ul {
   display: flex;
 }
 .copyright-container > .social > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #354D89;
   width: 50px;
   height: 50px;
   font-size: 15px;
   border-radius: 50%;
   padding: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-left: 10px;
 }
 .copyright-container > .social > div > a {
