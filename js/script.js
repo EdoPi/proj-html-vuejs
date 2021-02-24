@@ -133,6 +133,8 @@ var app = new Vue({
               class:'fa-wrench'
           }
       ],
+
+      subscribe:'',
       
     },
     methods:{

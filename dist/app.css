@@ -66,6 +66,7 @@ a {
 .jumbotron {
   width: 100%;
   background-image: url("../img/home_slider_bg.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
   height: 891px;
 }
@@ -440,6 +441,8 @@ a {
   width: 40%;
   padding: 15px 10px;
   margin-right: 20px;
+  outline: none;
+  font-size: 15px;
 }
 .subscribe-container > .input-content > span {
   background-color: black;
